@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stlye.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dues Payment</title>
+  </head>
+  <body>
+    <header>
+      <h1>Student Dues Payment</h1>
+      <div class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <button class="btnlogin-popup">Login</button>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="from-box login">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="input-box">
+            <input type="text" id="student_name" name="student_name" required />
+            <label for="student_name">Student Name</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="student_id" name="student_id" required />
+            <label for="student_id">Matric Number</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="number"
+              id="dues_amount"
+              name="dues_amount"
+              min="0"
+              required
+            />
+            <label for="dues_amount">Dues Amount</label>
+          </div>
+          <button type="submit" class="btn">Proceed to Payment</button>
+        </form>
+      </div>
+
+      <div class="from-box card-details" style="display: none">
+        <h2>Card Details</h2>
+        <form id="cardDetailsForm">
+          <div class="input-box">
+            <input type="text" id="card_number" name="card_number" required />
+            <label for="card_number">Card Number</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="expiry_date" name="expiry_date" required />
+            <label for="expiry_date">Expiry Date</label>
+          </div>
+          <div class="input-box">
+            <input type="text" id="cvv" name="cvv" required />
+            <label for="cvv">CVV</label>
+          </div>
+          <button type="submit" class="btn">Pay Dues</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
