@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(login.png) no-repeat center center/cover;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #162938;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  animation: bounceIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.from-box.message {
+  width: 100%;
+}
+
+.from-box h2 {
+  font-size: 1.5rem;
+  color: #162938;
+  margin-bottom: 20px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.from-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #162938;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 3.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0e1c28;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+  .wrapper {
+    width: 95%;
+    padding: 30px;
+  }
+  .from-box h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+  .from-box h2 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+}

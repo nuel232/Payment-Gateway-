@@ -24,13 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Submit the form data (replace this with your actual submission logic)
-    // For demonstration purposes, we'll just log the card details to the console
-    console.log("Card Number:", cardNumber);
-    console.log("Expiry Date:", expiryDate);
-    console.log("CVV:", cvv);
-
-    // Optionally, you can redirect the user to a payment page here
-    // window.location.href = "payment_page.html";
+    // Redirect to congratulations page
+    window.location.href = "congratulations.html";
   });
 });
